@@ -1,0 +1,13 @@
+Belgian eid card test application
+based on http://www.youtube.com/watch?v=x1dARGV_zEQ&html5=1
+
+Warning, doesn't work with glassfish 3.1
+use 3.0.1 instead from
+http://dlc.sun.com.edgesuite.net/glassfish/3.0.1/release/
+
+or workaround for 3.1
+For AppletService applet
+> parameter use something like:
+>      AppletService : 'identification;jsessionid=<%=session.getId()%>'
+> within your JSP page where the eID Applet gets loaded. 
+http://groups.google.com/group/eid-applet/msg/2077fd906c570191
