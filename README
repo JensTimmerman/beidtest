@@ -1,11 +1,28 @@
 Belgian eid card test application
+===================================
 based on http://www.youtube.com/watch?v=x1dARGV_zEQ&html5=1
 
+This is a "starter" application for getting started with develloping web
+applications in netbeans with the belgian eid card's.
+
+makes use of the eid-applet (http://code.google.com/p/eid-applet/)
+
+all the magic is in the pom.xml...
+
+just open this folder as a maven project in netbeans.
+
+known issues
+-------------
 Warning, doesn't work with glassfish 3.1
+(I got "ERROR: no session cookie detected!"  and "java.lang.RuntimeException: expected a protocol start message" )
 use 3.0.1 instead from
 http://dlc.sun.com.edgesuite.net/glassfish/3.0.1/release/
 
-or workaround for 3.1
+after installing this (run as administrator in windows)
+go to the services tab in netbeans, richtclick servers, add server, glassfish server 3
+and choose path where you installed this.
+
+or workaround for glassfish 3.1 (can't seem to install glassfish 3.0.1 in netbeans 7)
 For AppletService applet
 > parameter use something like:
 >      AppletService : 'identification;jsessionid=<%=session.getId()%>'
