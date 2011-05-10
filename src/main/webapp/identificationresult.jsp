@@ -14,8 +14,7 @@
     </head>
     <body>
         <h1>Identification Result</h1>
-        <% Identity i = (Identity)session.getAttribute("eid.identity"); %>
-        Name: <%=i.firstName%> <%=i.name%>
-        Photo: <img src="photo.jpg" />
+        <% String i = (String) session.getAttribute("eid.identifier"); %>
+        ID: <%=i%>
     </body>
 </html>
