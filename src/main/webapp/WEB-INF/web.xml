@@ -3,10 +3,22 @@
     <servlet>
         <servlet-name>IdentificationServlet</servlet-name>
         <servlet-class>be.fedict.eid.applet.service.AppletServiceServlet</servlet-class>
+        <init-param>
+            <param-name>IncludePhoto</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>PhotoServlet</servlet-name>
+        <servlet-class>be.fedict.eid.applet.service.PhotoServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>IdentificationServlet</servlet-name>
         <url-pattern>/identification-service</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PhotoServlet</servlet-name>
+        <url-pattern>/photo.jpg</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

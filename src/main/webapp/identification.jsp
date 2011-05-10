@@ -24,7 +24,7 @@
                 height :300
             };
             var parameters = {
-                AppletService :'identification-service',
+                AppletService : 'identification-service;jsessionid=<%=session.getId()%>',
                 TargetPage: 'identificationresult.jsp'
             };
             var version = '1.6';
