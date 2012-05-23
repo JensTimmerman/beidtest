@@ -20,8 +20,9 @@ http://blogs.oracle.com/enterprisetechtips/entry/using_ssl_with_glassfish_v2
 known issues
 -------------
 Tested in netbeans 6.9.1 with glassfish 3.0.1
+And netbeans 7 with glassfish 3.1
 
-Warning, doesn't work with glassfish 3.1
+The code from the video doesn't work with glassfish 3.1
 (I got "ERROR: no session cookie detected!"  and "java.lang.RuntimeException: expected a protocol start message" )
 use 3.0.1 instead from
 http://dlc.sun.com.edgesuite.net/glassfish/3.0.1/release/
@@ -30,7 +31,7 @@ after installing this (run as administrator in windows)
 go to the services tab in netbeans, richtclick servers, add server, glassfish server 3
 and select the path where you installed glassfish.
 
-or (untested) workaround for glassfish 3.1 (can't seem to install glassfish 3.0.1 in netbeans 7)
+this code includes a  workaround tested in glassfish 3.1
 For AppletService appletparameter use something like:
       AppletService : 'identification;jsessionid=<%=session.getId()%>'
 within your JSP page where the eID Applet gets loaded. 
