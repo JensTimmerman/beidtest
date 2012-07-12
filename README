@@ -2,7 +2,7 @@ Belgian eid card test application
 ===================================
 based on http://www.youtube.com/watch?v=x1dARGV_zEQ&html5=1
 
-This is a "starter" application for getting started with develloping web
+This is a "starter" application for getting started with developing web
 applications in netbeans with the belgian eid card's.
 
 makes use of the eid-applet (http://code.google.com/p/eid-applet/)
